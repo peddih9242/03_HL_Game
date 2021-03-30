@@ -1,4 +1,4 @@
-# String Checker
+# 02 String Checker, checks for valid strings
 
 
 def string_check(question, valid_list, error):

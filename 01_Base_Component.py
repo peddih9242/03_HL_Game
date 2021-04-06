@@ -1,5 +1,5 @@
-# 01 Base Component 31/03/2021
-
+# 01 HL Base Component 31/03/2021
+import random
 # Functions
 
 
@@ -8,7 +8,6 @@ def string_check(question, valid_list, error):
     while not valid:
         # Ask question
         response = input(question).lower()
-
         for item in valid_list:
             # iterates through the list to check for the first letter of an item
             if response == item[0] or response == item:
@@ -18,21 +17,31 @@ def string_check(question, valid_list, error):
             print(error)
 
 
-def num_check(question, low, high):
-    error = "Please enter an integer between {} and {}".format(low, high)
+def num_check(question, low=None, high=None):
+    chosen = ""
+    if low is not None and high is not None:
+        chosen = "both"
+    if low is not None and high is None:
+        chosen = "low"
     valid = False
     while not valid:
         try:
             # ask question
             response = int(input(question))
-            # if the inputted number is above the maximum or below the minimum then print an error
-            if low <= response <= high:
-                return response
-            else:
-                print(error)
+            if chosen == "both":
+                # if there is a low and high then check that response is between low and high (for guessing)
+                if response < low or response > high:
+                    print("Please enter an integer between {} and {}.".format(low, high))
+                    continue
+            # make sure high is above the lower boundary
+            elif chosen == "low":
+                if response < low:
+                    print("Please enter a number above {}.".format(low))
+                    continue
+            return response
         # if the input is not a number, print error
         except ValueError:
-            print(error)
+            print("Please enter an integer")
 
 
 def instructions():
@@ -50,8 +59,37 @@ def instructions():
 
 # set up valid lists
 yes_no_list = ["yes", "no"]
+game_summary = []
 
 
-show_instructions = string_check("Have you played this game before? ", yes_no_list, "Please enter yes or no.")
-if show_instructions == "yes" or show_instructions == "y":
+show_instructions = string_check("Have you played this game before? ", yes_no_list, "Please enter "
+                                                                                    "yes or no (or y / n).")
+if show_instructions == "no" or show_instructions == "n":
     instructions()
+print()
+# get higher + lower boundaries and # of rounds
+lower = num_check("Choose your lower number: ")
+higher = num_check("Choose your higher number: ", lower + 1)
+rounds = num_check("Rounds: ", 1)
+# setup amount of rounds played and guessed
+round_loop = 0
+guess = True
+guesses = 0
+while round_loop != rounds:
+    # get secret number
+    round_loop += 1
+    secret = random.randint(lower, higher)
+    print(secret)
+    guess_loop = False
+    while not guess_loop:
+        guesses += 1
+        guess_question = "Enter a number between {} and {}: ".format(lower, higher)
+        guess = num_check(guess_question, lower, higher)
+        if guess > secret:
+            print("Lower!")
+        elif guess < secret:
+            print("Higher!")
+        elif guess == secret:
+            print("You won.")
+            print()
+            guess_loop = True

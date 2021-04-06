@@ -1,7 +1,5 @@
-# 05 Low High check, checks that the user checks a lower number than the higher number when choosing low/high
-
-import random
 # Function
+import random
 
 
 def num_check(question, low=None, high=None):
@@ -30,14 +28,20 @@ def num_check(question, low=None, high=None):
         except ValueError:
             print("Please enter an integer")
 
-# main routine
+# Main routine
+
+dupe_guesses = []
+guesses_left = 5
+
 
 lower = num_check("Choose your lower number: ")
 higher = num_check("Choose your higher number: ", lower + 1)
-rounds = num_check("Rounds: ", 1)
 secret = random.randint(lower, higher)
 print(secret)
 guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
 guess = 0
-while guess != secret:
+while guess != secret and guesses_left >= 1:
     guess = num_check(guess_question, lower, higher)
+    dupe_guesses.append(guess)
+    if guess in dupe_guesses:
+        print("Please choose a different number, you have already chosen that number.")

@@ -32,16 +32,28 @@ def num_check(question, low=None, high=None):
 
 dupe_guesses = []
 guesses_left = 5
-
-
-lower = num_check("Choose your lower number: ")
-higher = num_check("Choose your higher number: ", lower + 1)
+# setup variables
+lower = 1
+higher = 100
 secret = random.randint(lower, higher)
+# print secret number for testing purposes
 print(secret)
 guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
-guess = 0
+guess = ""
 while guess != secret and guesses_left >= 1:
+    # ask to guess
     guess = num_check(guess_question, lower, higher)
-    dupe_guesses.append(guess)
+    # check for duplicate
     if guess in dupe_guesses:
         print("Please choose a different number, you have already chosen that number.")
+        continue
+    guesses_left -= 1
+    # add to duplicate
+    dupe_guesses.append(guess)
+    if guesses_left >= 1:
+        if guess < secret:
+            print("Higher")
+        elif guess > secret:
+            print("Lower")
+        elif guess == secret:
+            print("You win")

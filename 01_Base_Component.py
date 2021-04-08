@@ -76,15 +76,20 @@ round_loop = 0
 guess = True
 guesses = 0
 while round_loop != rounds:
+    already_guessed = []
     # get secret number
     round_loop += 1
     secret = random.randint(lower, higher)
-    print(secret)
+
     guess_loop = False
     while not guess_loop:
         guesses += 1
         guess_question = "Enter a number between {} and {}: ".format(lower, higher)
         guess = num_check(guess_question, lower, higher)
+        if guess in already_guessed:
+            print("You have already guessed that number! Please enter a different number.")
+            continue
+        already_guessed.append(guess)
         if guess > secret:
             print("Lower!")
         elif guess < secret:

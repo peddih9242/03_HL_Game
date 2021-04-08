@@ -1,6 +1,4 @@
-# Function
 import random
-
 
 def num_check(question, low=None, high=None):
     chosen = ""
@@ -28,32 +26,22 @@ def num_check(question, low=None, high=None):
         except ValueError:
             print("Please enter an integer")
 
-# Main routine
-
-dupe_guesses = []
-guesses_left = 5
+# main routine
 # set variables
 lower = 1
 higher = 100
+guesses_left = 5
 secret = random.randint(lower, higher)
-# print secret number for testing purposes
-print(secret)
 guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
-guess = ""
 while guess != secret and guesses_left >= 1:
     # ask to guess
     guess = num_check(guess_question, lower, higher)
-    # check for duplicate
-    if guess in dupe_guesses:
-        print("Please choose a different number, you have already chosen that number.")
-        continue
     guesses_left -= 1
-    # add to duplicate
-    dupe_guesses.append(guess)
+
     if guesses_left >= 1:
-        if guess < secret:
-            print("Higher")
-        elif guess > secret:
+        if guess > secret:
             print("Lower")
+        elif guess < secret:
+            print("Higher")
         elif guess == secret:
-            print("You win")
+            print("You won")

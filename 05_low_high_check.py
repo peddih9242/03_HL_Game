@@ -31,7 +31,8 @@ def num_check(question, low=None, high=None):
             print("Please enter an integer")
 
 # main routine
-
+game_summary = []
+# set variables
 lower = num_check("Choose your lower number: ")
 higher = num_check("Choose your higher number: ", lower + 1)
 rounds = num_check("Rounds: ", 1)

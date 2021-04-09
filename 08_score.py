@@ -1,6 +1,10 @@
+# Score component, shows score
+
 import random
 
+
 def num_check(question, low=None, high=None):
+
     chosen = ""
     if low is not None and high is not None:
         chosen = "both"
@@ -26,17 +30,21 @@ def num_check(question, low=None, high=None):
         except ValueError:
             print("Please enter an integer")
 
+
 # main routine
 # set variables
 lower = 1
 higher = 100
-guesses_left = 5
+guesses_left = 10
+guess_total = 0
+guess = 0
 secret = random.randint(lower, higher)
 guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
 while guess != secret and guesses_left >= 1:
     # ask to guess
     guess = num_check(guess_question, lower, higher)
     guesses_left -= 1
+    guess_total += 1
 
     if guesses_left >= 1:
         if guess > secret:
@@ -44,4 +52,6 @@ while guess != secret and guesses_left >= 1:
         elif guess < secret:
             print("Higher")
         elif guess == secret:
-            print("You won")
+            if guess_total == 1:
+                print("You won")
+                print("You needed {} guesses.".format(guess_total))

@@ -1,5 +1,7 @@
 # 01 HL Base Component 31/03/2021
+
 import random
+
 # Functions
 
 
@@ -71,18 +73,18 @@ print()
 lower = num_check("Choose your lower number: ")
 higher = num_check("Choose your higher number: ", lower + 1)
 rounds = num_check("Rounds: ", 1)
-# setup amount of rounds played and guessed
+# setup amount of rounds played and guess limit
 round_loop = 0
 guess = True
 guesses = 0
+guess_limit = 5
 while round_loop != rounds:
     already_guessed = []
     # get secret number
     round_loop += 1
     secret = random.randint(lower, higher)
 
-    guess_loop = False
-    while not guess_loop:
+    while guesses != guess_limit and guess != secret:
         guesses += 1
         guess_question = "Enter a number between {} and {}: ".format(lower, higher)
         guess = num_check(guess_question, lower, higher)
@@ -90,11 +92,13 @@ while round_loop != rounds:
             print("You have already guessed that number! Please enter a different number.")
             continue
         already_guessed.append(guess)
-        if guess > secret:
+        if guesses == guess_limit:
+            result = "lost"
+        elif guess > secret:
             print("Lower!")
         elif guess < secret:
             print("Higher!")
         elif guess == secret:
+            result = "won"
             print("You won.")
             print()
-            guess_loop = True

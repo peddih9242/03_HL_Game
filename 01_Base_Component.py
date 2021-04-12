@@ -21,6 +21,7 @@ def string_check(question, valid_list, error):
 
 def num_check(question, low=None, high=None):
     chosen = ""
+    # set situations
     if low is not None and high is not None:
         chosen = "both"
     if low is not None and high is None:
@@ -83,8 +84,12 @@ while round_loop != rounds:
     # get secret number
     round_loop += 1
     secret = random.randint(lower, higher)
-
-    while guesses != guess_limit and guess != secret:
+    print(secret)
+    # notify user if a new round has started
+    if round_loop > 1:
+        print("New Round!")
+        print()
+    while guess != secret:
         guesses += 1
         guess_question = "Enter a number between {} and {}: ".format(lower, higher)
         guess = num_check(guess_question, lower, higher)
@@ -92,13 +97,22 @@ while round_loop != rounds:
             print("You have already guessed that number! Please enter a different number.")
             continue
         already_guessed.append(guess)
-        if guesses == guess_limit:
+        # compare guess with secret to say lower, higher or to detect win/loss
+        if guess == secret:
+            result = "won"
+            print("You won.")
+            game_summary.append(result)
+            print()
+        elif guesses == guess_limit:
+            print("You ran out of guesses!")
             result = "lost"
+            game_summary.append(result)
+            guess = secret
         elif guess > secret:
             print("Lower!")
         elif guess < secret:
             print("Higher!")
-        elif guess == secret:
-            result = "won"
-            print("You won.")
-            print()
+
+print("*** Game Summary ***")
+for item in game_summary:
+    print(item)

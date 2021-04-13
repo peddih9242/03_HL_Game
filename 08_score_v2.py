@@ -35,26 +35,38 @@ def num_check(question, low=None, high=None):
 # set variables
 lower = 1
 higher = 100
-guesses_left = 10
-guess_total = 0
 guess = True
+rounds = 2
 game_summary = []
-secret = random.randint(lower, higher)
 guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
-while guess != secret and guesses_left >= 1:
-    # ask to guess
-    guess = num_check(guess_question, lower, higher)
-    guesses_left -= 1
-    guess_total += 1
-    if guesses_left >= 1:
-        if guess > secret:
+round_loop = 0
+while round_loop != rounds:
+    guess_total = 0
+    round_loop += 1
+    secret = random.randint(lower, higher)
+    print(secret)
+    valid = False
+    while not valid:
+        # ask guess question
+        guess = num_check(guess_question, lower, higher)
+        guess_total += 1
+        # compare guess with the secret number
+        if guess == secret:
+            print("You won")
+            result = "Round {}: Won with {} guesses.".format(round_loop, guess_total)
+            # store summary per round in list
+            game_summary.append(result)
+            valid = True
+        elif guess_total == 5:
+            print("You lost")
+            result = "Round {}: Lost with {} guesses.".format(round_loop, guess_total)
+            game_summary.append(result)
+            valid = True
+        elif guess > secret:
             print("Lower")
         elif guess < secret:
             print("Higher")
-        elif guess == secret:
-            print("You won")
-            result = "Won with {} guesses.".format(guess_total)
-            game_summary.append(result)
+# print the summary
 print("Game Summary")
 for item in game_summary:
     print(item)

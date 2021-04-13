@@ -4,7 +4,7 @@ import random
 
 # Functions
 
-
+# checks for a valid string or the first letter from a list
 def string_check(question, valid_list, error):
     valid = False
     while not valid:
@@ -19,6 +19,8 @@ def string_check(question, valid_list, error):
             print(error)
 
 
+# checks user has entered an integer, optionally checks that
+# integer is more than a  minimum / between two numbers
 def num_check(question, low=None, high=None):
     chosen = ""
     # set situations
@@ -47,6 +49,7 @@ def num_check(question, low=None, high=None):
             print("Please enter an integer")
 
 
+# outputs instructions on request, returns <blank>
 def instructions():
     # prints instructions
     print("***** INSTRUCTIONS *****")
@@ -70,17 +73,20 @@ show_instructions = string_check("Have you played this game before? ", yes_no_li
 if show_instructions == "no" or show_instructions == "n":
     instructions()
 print()
+
 # get higher + lower boundaries and # of rounds
 lower = num_check("Choose your lower number: ")
 higher = num_check("Choose your higher number: ", lower + 1)
 rounds = num_check("Rounds: ", 1)
+
 # setup amount of rounds played and guess limit
 round_loop = 0
 guess = True
-guesses = 0
 guess_limit = 5
+
 while round_loop != rounds:
     already_guessed = []
+    guesses = 0
     # get secret number
     round_loop += 1
     secret = random.randint(lower, higher)
@@ -99,13 +105,14 @@ while round_loop != rounds:
         already_guessed.append(guess)
         # compare guess with secret to say lower, higher or to detect win/loss
         if guess == secret:
-            result = "won"
+            result = "Round {}: {} guesses (won)".format(guesses, round_loop)
             print("You won.")
             game_summary.append(result)
             print()
+        #
         elif guesses == guess_limit:
+            result = "Round {}: {} guesses (lost)".format(round_loop, guesses)
             print("You ran out of guesses!")
-            result = "lost"
             game_summary.append(result)
             guess = secret
         elif guess > secret:

@@ -40,6 +40,10 @@ rounds = 2
 game_summary = []
 guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
 round_loop = 0
+rounds_won = 0
+rounds_lost = 0
+best_score = 10
+worst_score = 0
 while round_loop != rounds:
     guess_total = 0
     round_loop += 1
@@ -52,21 +56,37 @@ while round_loop != rounds:
         guess_total += 1
         # compare guess with the secret number
         if guess == secret:
+            rounds_won += 1
             print("You won")
             result = "Round {}: Won with {} guesses.".format(round_loop, guess_total)
             # store summary per round in list
             game_summary.append(result)
+            if guess_total < best_score:
+                best_score = guess_total
+            elif guess_total > worst_score:
+                worst_score = guess_total
             valid = True
+        # if there has been 5 guesses, show that the user lost
         elif guess_total == 5:
+            worst_score = guess_total
             print("You lost")
+            rounds_lost += 1
             result = "Round {}: Lost with {} guesses.".format(round_loop, guess_total)
             game_summary.append(result)
             valid = True
+        # print higher/lower depending on situation
         elif guess > secret:
             print("Lower")
         elif guess < secret:
             print("Higher")
 # print the summary
-print("Game Summary")
+
+print("*** Game Summary ***")
+print()
+print("Won: {}   |   Lost: {}".format(rounds_won, rounds_lost))
+print()
 for item in game_summary:
     print(item)
+print()
+print("Best: {}".format(best_score))
+print("Worst: {}".format(worst_score))

@@ -7,7 +7,7 @@ for item in range(0, 6):
     low = int(input("Low: "))
     high = int(input("High: "))
     # calculate range from low and high
-    range = high - low + 1
+    hl_range = high - low + 1
     # calculate the highest amount of guesses needed with the binary search strategy
     max_raw = math.log2(range)
     # round up and give an extra guess just in case the user makes a mistake

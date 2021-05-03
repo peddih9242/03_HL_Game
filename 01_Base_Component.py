@@ -1,4 +1,5 @@
 # 01 HL Base Component 31/03/2021
+# TO DO - lower message and higher message use statement function
 
 import random
 import math
@@ -103,8 +104,9 @@ while keep_going == "":
     # setup amount of rounds played and guess limit
     round_loop = 0
     guess = True
-    best_score = 100
-    worst_score = 0
+    best_score = higher + 1
+    worst_score = lower - 1
+    avg_sum = 0
 
     while round_loop != rounds:
         already_guessed = []
@@ -121,12 +123,13 @@ while keep_going == "":
         print(secret)
         # notify user if a new round has started
         if round_loop > 1:
-            print("New Round!")
+            round_statement = "Round {} of {}: You have {} guesses".format(round_loop, rounds, guess_limit)
+            statement_gen(round_statement, "#")
             print()
         while guess != secret:
             guesses += 1
             guess_left -= 1
-            guess_question = "Enter a number between {} and {} - you have {} guesses left: "\
+            guess_question = "Enter a number between {} and {}: "\
                 .format(lower, higher, guess_left)
             # ask for user to guess
             guess = num_check(guess_question, lower, higher)
@@ -142,34 +145,44 @@ while keep_going == "":
             # the worst/best amount of guesses and contribute to game summary
             if guess == secret:
                 result = "Round {}: {} guesses (won)".format(round_loop, guesses)
-                print("You won.")
+                statement_gen("You guessed the number!", "!")
                 game_summary.append(result)
                 if guesses < best_score:
                     best_score = guesses
                 if guesses > worst_score:
                     worst_score = guesses
-                print()
+                avg_sum = avg_sum + guesses
             elif guess_left <= 0:
                 result = "Round {}: {} guesses (lost)".format(round_loop, guesses)
-                print("You ran out of guesses!")
+                statement_gen("You ran out of guesses!", "!")
                 game_summary.append(result)
                 worst_score = guesses
+                avg_sum = avg_sum + guesses
                 if guesses < best_score:
                     best_score = guesses
                 guess = secret
             elif guess > secret:
-                print("Lower!")
+                statement_gen("Too high, try a lower number - guesses left: {}".format(guess_left))
             elif guess < secret:
-                print("Higher!")
+
+                statement_gen("Too low, try a higher number - guesses left: {}".format(guess_left))
 
     # game summary and statistics output
+    avg_guess = avg_sum / rounds
+    print()
     statement_gen("Game Summary", "*")
-    for item in game_summary:
-        print(item)
+    print()
     stats = input("Press <enter> if you would like to see your game statistics")
     if stats == "":
+        print()
+        statement_gen("Game Scores", "=")
+        for item in game_summary:
+            print(item)
+        print()
         print("Best: {}".format(best_score))
         print("Worst: {}".format(worst_score))
+        print("Average: {:.2f}".format(avg_guess))
+        print()
 
     keep_going = input("Press <enter> to play again or any key to quit: ")
     print()

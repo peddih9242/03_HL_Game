@@ -20,28 +20,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="01_Base_Component.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="01_Base_Component.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01_Base_Component.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
               <folding>
-                <element signature="e#101#114#0" expanded="true" />
-                <element signature="e#269#662#0" expanded="false" />
-                <element signature="e#829#1815#0" expanded="false" />
-                <element signature="e#1890#2464#0" expanded="false" />
-                <element signature="e#2561#2751#0" expanded="false" />
+                <element signature="e#35#48#0" expanded="true" />
+                <element signature="e#203#596#0" expanded="false" />
+                <element signature="e#763#1749#0" expanded="false" />
+                <element signature="e#1824#2398#0" expanded="false" />
+                <element signature="e#2495#2685#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="00_sandpit.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/00_sandpit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -49,58 +39,8 @@
       <file leaf-file-name="07_statement_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/07_statement_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_duplicate_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06_duplicate_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="08_score.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/08_score.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="08_score_v2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/08_score_v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-310">
-              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="09_max_guesses.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_max_guesses.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="05_low_high_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_low_high_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+            <state relative-caret-position="204">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -125,20 +65,22 @@
         <option value="$PROJECT_DIR$/02_string_checker.py" />
         <option value="$PROJECT_DIR$/04_guess_comparison.py" />
         <option value="$PROJECT_DIR$/05_low_high_check.py" />
-        <option value="$PROJECT_DIR$/06_duplicate_check.py" />
         <option value="$PROJECT_DIR$/08_score.py" />
-        <option value="$PROJECT_DIR$/09_max_guesses.py" />
-        <option value="$PROJECT_DIR$/07_statement_generator.py" />
         <option value="$PROJECT_DIR$/00_sandpit.py" />
+        <option value="$PROJECT_DIR$/06_duplicate_check.py" />
+        <option value="$PROJECT_DIR$/03_num_check_v2.py" />
         <option value="$PROJECT_DIR$/01_Base_Component.py" />
         <option value="$PROJECT_DIR$/08_score_v2.py" />
+        <option value="$PROJECT_DIR$/09_max_guesses.py" />
+        <option value="$PROJECT_DIR$/07_statement_generator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -151,7 +93,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -164,13 +106,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/00_sandpit.py" />
@@ -182,8 +118,8 @@
       <recent name="C:\Users\peddih9242\OneDrive - Massey High School\2021_Schoolwork\COM101\01_Programming\03_HL_Game" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.08_score_v2">
-    <configuration default="false" name="01_Base_Component" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.01_Base_Component">
+    <configuration default="false" name="03_num_check_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -195,12 +131,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="03_HL_Game" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_Base_Component.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_num_check_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="08_score" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="03_num_check" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -212,41 +148,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="03_HL_Game" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_score.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="08_score_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="03_HL_Game" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_score_v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="00_sandpit" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="03_HL_Game" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_sandpit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_num_check.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -264,6 +166,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="03_HL_Game" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_max_guesses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="07_statement_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="03_HL_Game" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07_statement_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="01_Base_Component" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="03_HL_Game" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_Base_Component.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -403,19 +339,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.01_Base_Component" />
-      <item index="1" class="java.lang.String" itemvalue="Python.08_score" />
-      <item index="2" class="java.lang.String" itemvalue="Python.08_score_v2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.00_sandpit" />
-      <item index="4" class="java.lang.String" itemvalue="Python.09_max_guesses" />
+      <item index="0" class="java.lang.String" itemvalue="Python.03_num_check_v2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.03_num_check" />
+      <item index="2" class="java.lang.String" itemvalue="Python.09_max_guesses" />
+      <item index="3" class="java.lang.String" itemvalue="Python.07_statement_generator" />
+      <item index="4" class="java.lang.String" itemvalue="Python.01_Base_Component" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.08_score_v2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.01_Base_Component" />
-        <item index="2" class="java.lang.String" itemvalue="Python.00_sandpit" />
-        <item index="3" class="java.lang.String" itemvalue="Python.09_max_guesses" />
-        <item index="4" class="java.lang.String" itemvalue="Python.08_score" />
+        <item index="0" class="java.lang.String" itemvalue="Python.01_Base_Component" />
+        <item index="1" class="java.lang.String" itemvalue="Python.07_statement_generator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.09_max_guesses" />
+        <item index="3" class="java.lang.String" itemvalue="Python.03_num_check" />
+        <item index="4" class="java.lang.String" itemvalue="Python.03_num_check_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -433,15 +369,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12943633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28495198" sideWeight="0.50417536" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28495198" sideWeight="0.49582464" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.27589852" sideWeight="0.49582464" order="2" side_tool="false" content_ui="tabs" x="961" y="31" width="958" height="1008" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -492,28 +428,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01_Base_Component.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00_sandpit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/07_statement_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -567,11 +481,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,11 +551,11 @@
         <state relative-caret-position="799">
           <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
           <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,11 +613,11 @@
         <state relative-caret-position="799">
           <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
           <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,11 +667,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,11 +713,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,11 +759,11 @@
         <state relative-caret-position="1768">
           <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -869,50 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_low_high_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09_max_guesses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_duplicate_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08_score.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1249248731/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="475" column="4" selection-start-line="475" selection-start-column="4" selection-end-line="475" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07_statement_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -925,25 +799,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_Base_Component.py">
+    <entry file="file://$PROJECT_DIR$/06_duplicate_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding>
-            <element signature="e#101#114#0" expanded="true" />
-            <element signature="e#269#662#0" expanded="false" />
-            <element signature="e#829#1815#0" expanded="false" />
-            <element signature="e#1890#2464#0" expanded="false" />
-            <element signature="e#2561#2751#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_num_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_num_check_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/08_score_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
-          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        <state relative-caret-position="824">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_low_high_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_max_guesses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07_statement_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_Base_Component.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding>
+            <element signature="e#35#48#0" expanded="true" />
+            <element signature="e#203#596#0" expanded="false" />
+            <element signature="e#763#1749#0" expanded="false" />
+            <element signature="e#1824#2398#0" expanded="false" />
+            <element signature="e#2495#2685#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

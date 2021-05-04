@@ -30,8 +30,7 @@ def num_check(question, low=None, high=None):
         except ValueError:
             print("Please enter an integer")
 
-
-# main routine
+# Main routine
 # set variables
 lower = 1
 higher = 100
@@ -91,6 +90,6 @@ print()
 for item in game_summary:
     print(item)
 print()
-print("Best: {}".format(best_score))
-print("Worst: {}".format(worst_score))
+print("Best Score: {}".format(best_score))
+print("Worst Score: {}".format(worst_score))
 print("Average: {:.2f}".format(avg_score))

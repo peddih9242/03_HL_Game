@@ -9,7 +9,7 @@ for item in range(0, 6):
     # calculate range from low and high
     hl_range = high - low + 1
     # calculate the highest amount of guesses needed with the binary search strategy
-    max_raw = math.log2(range)
+    max_raw = math.log2(hl_range)
     # round up and give an extra guess just in case the user makes a mistake
     max_upped = math.ceil(max_raw)
     max_guesses = max_upped + 1

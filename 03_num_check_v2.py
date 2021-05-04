@@ -1,9 +1,6 @@
-# Function
-import random
-
-
 def num_check(question, low=None, high=None):
     chosen = ""
+    # set situations
     if low is not None and high is not None:
         chosen = "both"
     if low is not None and high is None:
@@ -28,31 +25,7 @@ def num_check(question, low=None, high=None):
         except ValueError:
             print("Please enter an integer")
 
-# Main routine
-
-dupe_guesses = []
-guesses_left = 5
-# set variables
-lower = 1
-higher = 100
-secret = 42
-# print secret number for testing purposes
-guess_question = "Please choose a number between {} and {}: ".format(lower, higher)
-guess = ""
-while guess != secret and guesses_left >= 1:
-    # ask to guess
-    guess = num_check(guess_question, lower, higher)
-    # check for duplicate
-    if guess in dupe_guesses:
-        print("Please choose a different number, you have already chosen that number.")
-        continue
-    guesses_left -= 1
-    # add to duplicate
-    dupe_guesses.append(guess)
-    if guesses_left >= 1:
-        if guess < secret:
-            print("Higher")
-        elif guess > secret:
-            print("Lower")
-        elif guess == secret:
-            print("You win")
+lower = num_check("Low: ")
+higher = num_check("High: ", lower + 1)
+rounds = num_check("Rounds: ", 1)
+guess = num_check("Guess: ", lower, higher)

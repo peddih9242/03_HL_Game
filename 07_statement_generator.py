@@ -7,4 +7,7 @@ def statement_gen(statement, decoration):
     print(above)
     return ""
 
-statement_gen("Higher Lower Game", "*")
+for item in range(0, 3):
+    statement = input("Statement: ")
+    decoration = input("Decoration: ")
+    statement_gen(statement, decoration)

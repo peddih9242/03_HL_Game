@@ -1,5 +1,4 @@
 # 01 HL Base Component 31/03/2021
-# TO DO - lower message and higher message use statement function
 
 import random
 import math

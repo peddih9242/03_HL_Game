@@ -43,12 +43,12 @@ def num_check(question, low=None, high=None):
             # make sure high is above the lower boundary
             elif chosen == "low":
                 if response < low:
-                    print("Please enter a number above {}.".format(low))
+                    print("Please enter a number above {}.".format(low - 1))
                     continue
             return response
         # if the input is not a number, print error
         except ValueError:
-            print("Please enter an integer")
+            print("Please enter an integer.")
 
 
 # outputs instructions on request, returns <blank>
@@ -83,7 +83,8 @@ yes_no_list = ["yes", "no"]
 
 
 # question to decide whether to show instructions
-show_instructions = string_check("Have you played this game before? ", yes_no_list, "Please enter "                                   "yes or no (or y / n).")
+show_instructions = string_check("Have you played this game before? ", yes_no_list, "Please enter "
+                                                                                    "yes or no (or y / n).")
 if show_instructions == "no" or show_instructions == "n":
     instructions()
 print()
@@ -109,8 +110,10 @@ while keep_going == "":
 
     # setup variables that will be used in the game
     round_loop = 0
-    guess = True
-    best_score = higher + 1
+    if higher >= 1:
+        best_score = higher + 1
+    else:
+        best_score = 1
     worst_score = lower - 1
     avg_sum = 0
     won = 0
@@ -132,7 +135,7 @@ while keep_going == "":
         # get secret number
         round_loop += 1
         secret = random.randint(lower, higher)
-        print(secret)
+        guess = True
 
         # notify user if a new round has started
         if round_loop > 1:

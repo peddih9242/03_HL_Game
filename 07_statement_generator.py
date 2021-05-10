@@ -8,6 +8,6 @@ def statement_gen(statement, decoration):
     return ""
 
 for item in range(0, 3):
-    statement = input("Statement: ")
-    decoration = input("Decoration: ")
-    statement_gen(statement, decoration)
+    statement_a = input("Statement: ")
+    decoration_a = input("Decoration: ")
+    statement_gen(statement_a, decoration_a)

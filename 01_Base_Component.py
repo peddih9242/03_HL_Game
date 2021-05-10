@@ -113,7 +113,7 @@ while keep_going == "":
     if higher >= 1:
         best_score = higher + 1
     else:
-        best_score = 1
+        best_score = guess_limit
     worst_score = lower - 1
     avg_sum = 0
     won = 0
@@ -136,23 +136,22 @@ while keep_going == "":
         # get secret number
         round_loop += 1
         secret = random.randint(lower, higher)
-        print("Spoiler Alert: ", secret)
         guess = secret - 1
 
         # notify user if a new round has started
-        if round_loop > 1:
+        if round_loop >= 1:
+            print()
             round_statement = "Round {} of {}: You have {} guesses".format(round_loop, rounds, guess_limit)
             statement_gen(round_statement, "=")
-            print()
+        print("Spoiler Alert: ", secret)
         while guess != secret:
             guesses += 1
             guess_left -= 1
-            guess_question = "Guess a number between {} and {}: "\
-                .format(lower, higher, guess_left)
+            guess_question = "Guess: "
 
             # ask for user to guess
-            guess = num_check(guess_question, lower, higher)
             print()
+            guess = num_check(guess_question, lower, higher)
 
             # if it is a duplicate guess, tell the user
             if guess in already_guessed:
@@ -167,12 +166,14 @@ while keep_going == "":
             # the worst/best scores and guesses (and average amount of guesses)
             # to add to game summary for end of game statistics
             if guess == secret:
-                result = "Round {}: {} guesses (won)".format(round_loop, guesses)
-                game_summary.append(result)
+                print()
                 if guesses == 1:
                     won_statement = "Amazing, you guessed the number in 1 try"
+                    result = "Round {}: 1 guess (won)".format(round_loop)
                 else:
                     won_statement = "You guessed the number in {} guesses".format(guesses)
+                    result = "Round {}: {} guesses (won)".format(round_loop, guesses)
+                game_summary.append(result)
                 statement_gen(won_statement, "!")
                 if guesses < best_score:
                     best_score = guesses
@@ -197,9 +198,9 @@ while keep_going == "":
             elif guess < secret:
                 higher_statement = "Too low, try a higher number - guesses left: {}".format(guess_left)
                 statement_gen(higher_statement, "^")
-            print()
 
     # game summary and statistics output
+    print()
     avg_guess = avg_sum / rounds
     won_lost = "Won: {} | Lost: {}".format(won, lost)
     statement_gen(won_lost, "-")
@@ -209,8 +210,8 @@ while keep_going == "":
         print()
         statement_gen("Game Summary", "=")
         print()
-        for item in game_summary:
-            print(item)
+        for summary in game_summary:
+            print(summary)
         print()
         print("Best: {}".format(best_score))
         print("Worst: {}".format(worst_score))

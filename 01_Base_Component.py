@@ -118,10 +118,11 @@ while keep_going == "":
     avg_sum = 0
     won = 0
     lost = 0
+    game_summary = []
 
+    # loop the round
     while round_loop != rounds:
         already_guessed = []
-        game_summary = []
         guesses = 0
         guess_left = guess_limit
 
@@ -135,17 +136,18 @@ while keep_going == "":
         # get secret number
         round_loop += 1
         secret = random.randint(lower, higher)
-        guess = True
+        print("Spoiler Alert: ", secret)
+        guess = secret - 1
 
         # notify user if a new round has started
         if round_loop > 1:
             round_statement = "Round {} of {}: You have {} guesses".format(round_loop, rounds, guess_limit)
-            statement_gen(round_statement, "#")
+            statement_gen(round_statement, "=")
             print()
         while guess != secret:
             guesses += 1
             guess_left -= 1
-            guess_question = "Enter a number between {} and {}: "\
+            guess_question = "Guess a number between {} and {}: "\
                 .format(lower, higher, guess_left)
 
             # ask for user to guess
@@ -166,12 +168,12 @@ while keep_going == "":
             # to add to game summary for end of game statistics
             if guess == secret:
                 result = "Round {}: {} guesses (won)".format(round_loop, guesses)
+                game_summary.append(result)
                 if guesses == 1:
                     won_statement = "Amazing, you guessed the number in 1 try"
                 else:
                     won_statement = "You guessed the number in {} guesses".format(guesses)
                 statement_gen(won_statement, "!")
-                game_summary.append(result)
                 if guesses < best_score:
                     best_score = guesses
                 if guesses > worst_score:
@@ -180,9 +182,9 @@ while keep_going == "":
                 won += 1
             elif guess_left <= 0:
                 result = "Round {}: {} guesses (lost, ran out of guesses)".format(round_loop, guesses)
+                game_summary.append(result)
                 lost_statement = "You ran out of guesses, the secret number was {}".format(secret)
                 statement_gen(lost_statement, "!")
-                game_summary.append(result)
                 worst_score = guesses
                 avg_sum = avg_sum + guesses
                 if guesses < best_score:
@@ -215,6 +217,7 @@ while keep_going == "":
         print("Average: {:.2f}".format(avg_guess))
         print()
 
+    # ask if the user would like to play again
     keep_going = input("Press <enter> to play again or any key to quit: ")
     print()
 print("Thanks for playing")

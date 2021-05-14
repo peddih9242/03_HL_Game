@@ -58,7 +58,7 @@ def instructions():
     statement_gen("INSTRUCTIONS", "!")
     print()
     print("Every round you will be asked to...")
-    print("- Enter a 'low' and 'high' number to guess between. The computer will generate a secret number"
+    print("- Enter a 'low' and 'high' number to guess between. The computer will generate a secret number "
           "which will be the one you are trying to guess.")
     print("- The computer will calculate how many guesses "
           "you are allowed depending on the low and high number you choose")
